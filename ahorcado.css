@@ -4,7 +4,7 @@ header{
 .espacioBotones{
     margin:0 auto !important;
 }
-.botones{
+#botones{
     padding: 24px;
     width: 336px;
     height:67px;
@@ -18,9 +18,12 @@ header{
     font-size:16px;
     
 }
-.botones:hover{
+#botones:hover{
     background-color: #0A3871;
     color: #E5E5E5;
+}
+.boton-en-juego{
+    display: none;
 }
 footer{
 margin-top: 20px;
@@ -34,4 +37,7 @@ font-size: 20px;
 footer img{
     width: 30px;
     padding:5px 20px 0px 0;
+}
+.canvas-en-juego{
+    display:none;
 }

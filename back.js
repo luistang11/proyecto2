@@ -4,6 +4,7 @@ var letras=[];
 var palabraCorrecta="";
 var errores=8;
 
+
 function escogerPalabra(){
     var palabra=palabras[Math.floor(Math.random()*palabras.length)]
     palabraSecreta=palabra;
@@ -45,7 +46,18 @@ function escribirLetraIncorrecta(letra,errorsLeft){
     tablero.fillStyle = '#0A3871';
     tablero.fillText(letra,535+(40*(10-errorsLeft)),710,40);
 }
+
+function validarTexto(parametro){
+    var patron=/^[a-zA-Z\s]*$/;
+    if(parametro.search(patron)){
+        return false;
+    }else{
+        return true;
+    }
+}
+
 function verificarLetra(key){
+
     if(letras.length<1 || letras.indexOf(key)<0){
         letras.push(key);
         return false;
@@ -78,8 +90,8 @@ document.onkeydown =(e)=>{
         }
         else{
             if(!verificarLetra(e.key)) return 
-            adicionarLetraIncorrecta(letra)
-            escribirLetraIncorrecta(letra,errores)
+            adicionarLetraIncorrecta(letra);
+            escribirLetraIncorrecta(letra,errores);
             switch(errores){
                 case 7:{
                     crearBaseEstructura();

@@ -8,15 +8,18 @@
     <link rel="stylesheet" href="ahorcado.css">
 </head>
 <body style="background-color: #E5E5E5">
-
+    
     <header>
         <img src="../desafio1/fotos desafio 1/logoAlura.png" alt="LogoAlura">
     </header>
-    <canvas id="horca" width="1200" height="800"></canvas>
-    <section class="espacioBotones" style="text-align: center">
-    <button class="botones" type="submit">Nuevo Juego</button>
-    <button class="botones"type="submit">Desistir</button>
+    <main style="height:100vh; align-items: center; justify-content:center; display:block">
+    <canvas class="canvas-en-juego" id="horca" width="1200" height="800"></canvas>
+    <section class="espacioBotones" style="text-align: center;">
+    <button class="botonIniciarJuego" id="botones" type="submit">Nuevo Juego</button>
+    <button class="boton-en-juego" id="botones"type="submit">Desistir</button>
+    <button class="boton-antes-juego" id="botones"type="submit">Agregar Palabra</button>
     </section>
+    </main>
     <footer>
         <p>Hecho por Luis Tang</p>
         <a href="https://www.linkedin.com/in/luis-daniel-tang-rengifo-9509b8219/"><img src="img/logoLinkedin.png" alt="LogoLinkedin"></a>
@@ -24,6 +27,7 @@
     </footer>
     <script src="back.js"></script>
     <script src="dibujoAlFallar.js"></script>
+    <script src="nuevojuego.js"></script>
 
 </body>
 </html>
