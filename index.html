@@ -5,29 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcado</title>
-    <link rel="stylesheet" href="ahorcado.css">
+    <link rel="stylesheet" href="./css/ahorcado.css">
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
-<body style="background-color: #E5E5E5">
-    
+<body>
     <header>
-        <img src="../desafio1/fotos desafio 1/logoAlura.png" alt="LogoAlura">
+        <img src="./img/logoAlura.png" alt="LogoAlura">
     </header>
-    <main style="height:100vh; align-items: center; justify-content:center; display:block">
-    <canvas class="canvas-en-juego" id="horca" width="1200" height="800"></canvas>
-    <section class="espacioBotones" style="text-align: center;">
-    <button class="botonIniciarJuego" id="botones" type="submit">Nuevo Juego</button>
-    <button class="boton-en-juego" id="botones"type="submit">Desistir</button>
-    <button class="boton-antes-juego" id="botones"type="submit">Agregar Palabra</button>
-    </section>
+    <main style="height: 40vh;">
+    <div style="margin-top:20%">
+        <h1 style="text-align: center; margin:15px 0">❕Juego sólo para computadoras</h1>
+        <section class="espacioBotones" style="display: flex; justify-content: center;">   
+            <a href="./html/juego.html"><button class="botonIniciarJuego" id="botones" type="submit">Nuevo Juego</button></a>
+            <a href="./html/palabra.html"><button class="boton-antes-juego" id="botones"type="submit">Agregar Palabra</button></a> 
+        </section>
+    </div>
     </main>
-    <footer>
+    <footer style="position: fixed; bottom:0">
         <p>Hecho por Luis Tang</p>
         <a href="https://www.linkedin.com/in/luis-daniel-tang-rengifo-9509b8219/"><img src="img/logoLinkedin.png" alt="LogoLinkedin"></a>
         <a href="https://github.com/luistang11"><img src="img/GitHub_logo.png" alt="logoGitHub"></a>
     </footer>
-    <script src="back.js"></script>
-    <script src="dibujoAlFallar.js"></script>
-    <script src="nuevojuego.js"></script>
-
 </body>
 </html>

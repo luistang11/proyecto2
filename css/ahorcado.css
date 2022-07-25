@@ -1,0 +1,69 @@
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+background-color: #E5E5E5;
+}
+header{
+    padding:10px;
+}
+header img{
+    margin:20px 0 0 20px
+}
+main{
+    text-align: center  ;
+    align-items: center; 
+    justify-content:center; 
+    display:block;
+}
+.espacioBotones{
+    margin:30px auto !important;
+}
+#botones{
+    padding: 24px;
+    width: 336px;
+    height:67px;
+    border-radius:24px;
+    color: #0A3871;
+    background-color: #E5E5E5;
+    border-color: #0A3871;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin:0 10px;
+    font-size:16px;
+    
+}
+#botones:hover{
+    background-color: #0A3871;
+    color: #E5E5E5;
+}
+footer{
+margin-top: 70px;
+width: 100%;
+text-align: center;
+background-color:#0A3871; 
+color:#E5E5E5;
+padding: 30px 0px !important;
+}
+footer p{
+    font-size: 20px;
+}
+
+footer img{
+    width: 30px;
+    padding:5px 20px 0px 0;
+}
+.containerCanvas{
+    text-align: center;
+}
+#palabra{
+    height:500px; 
+    width:500px; 
+    resize:none; 
+    background-color: #E5E5E5; 
+    border:none; 
+    font-size: 40px;
+}
+#palabra:hover{
+    outline: none;
+}

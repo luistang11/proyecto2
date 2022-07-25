@@ -21,8 +21,8 @@ function dibujarLineas(){
 
     var ancho=600/palabraSecreta.length;
     for(let i=0;i<palabraSecreta.length;i++){
-        tablero.moveTo(500+(ancho*i),640);
-        tablero.lineTo(550+(ancho*i),640);
+        tablero.moveTo((ancho*i),640);
+        tablero.lineTo(50+(ancho*i),640);
     }
     tablero.stroke();
     tablero.closePath()
@@ -36,7 +36,7 @@ function escribirLetraCorrecta(index){
     tablero.fillStyle = "#0A3871";
 
     var ancho=600/palabraSecreta.length;
-    tablero.fillText(palabraSecreta[index],505+(ancho*index),620)
+    tablero.fillText(palabraSecreta[index],05+(ancho*index),620)
 }
 function escribirLetraIncorrecta(letra,errorsLeft){
     tablero.font="bold 40px Inter"
@@ -44,7 +44,7 @@ function escribirLetraIncorrecta(letra,errorsLeft){
     tablero.linecap = 'round';
     tablero.lineJoin = 'round';
     tablero.fillStyle = '#0A3871';
-    tablero.fillText(letra,535+(40*(10-errorsLeft)),710,40);
+    tablero.fillText(letra,35+(40*(10-errorsLeft)),710,40);
 }
 
 function validarTexto(parametro){
@@ -102,8 +102,8 @@ document.onkeydown =(e)=>{
                     break;
                 }
                 case 5:{
-                    crearCabeza(850,140,40,'#0A3871');
-                    crearCabeza(850,140,35,'#E5E5E5');
+                    crearCabeza(350,140,40,'#0A3871');
+                    crearCabeza(350,140,35,'#E5E5E5');
                     break;
                 }
                 case 4:{
