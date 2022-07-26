@@ -64,6 +64,7 @@ footer img{
     border:none; 
     font-size: 40px;
 }
-#palabra:hover{
+
+#palabra:focus{
     outline: none;
 }

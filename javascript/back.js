@@ -4,7 +4,6 @@ var letras=[];
 var palabraCorrecta="";
 var errores=8;
 
-
 function escogerPalabra(){
     var palabra=palabras[Math.floor(Math.random()*palabras.length)]
     palabraSecreta=palabra;
@@ -124,7 +123,12 @@ document.onkeydown =(e)=>{
                 }
                 case 0:{
                     crearPiernaDerecha();
-                    alert("Perdiste");
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'PERDISTE',
+                        text: "LA PALABRA ERA: "+palabraSecreta,
+                        footer: '<a href="../html/juego.html">Intentarlo de nuevo</a>',
+                      })
                     break;
                 }
             } 

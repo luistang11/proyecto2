@@ -15,17 +15,16 @@
     <main>
         <form>
             <label for="palabra"></label>
-            <textarea name="palabra" id="palabra" placeholder="Ingrese la palabra acá"></textarea>
+            <textarea name="palabra" id="palabra" placeholder="Ingrese la palabra acá" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"></textarea>
         </form>            
-        <button class="btnGuardarPalabra" id="botones" type="submit">Guardar y empezar</button>
-        <a href="/proyecto2"><button id="botones" type="submit">Cancelar</button></a>
+        <button class="btnGuardarPalabra" id="botones">Guardar y empezar</button>
+        <a href="/proyecto2"><button id="botones">Cancelar</button></a>
     </main>
     <footer style="position: fixed; bottom:0">
         <p>Hecho por Luis Tang</p>
         <a href="https://www.linkedin.com/in/luis-daniel-tang-rengifo-9509b8219/"><img src="../img/logoLinkedin.png" alt="LogoLinkedin"></a>
         <a href="https://github.com/luistang11"><img src="../img/GitHub_logo.png" alt="logoGitHub"></a>
     </footer>
-
-    <script src="../javascript/agregarPalabra.js"></script>
+    <script src="../javascript/back.js"></script>
 </body>
 </html>
